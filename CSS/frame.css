@@ -1,0 +1,57 @@
+/* --- Background --- */
+
+#frame--background {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/* --- Frame --- */
+
+#frame {
+    height: 25%;
+    width: 30%;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    flex-direction: column;
+    transition: .3s all;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+#frame--background.visible {
+    display: flex;
+}
+
+#frame.expand {
+    animation: expand-frame .3s;
+}
+
+/* --- Icons --- */
+
+.fa-xmark {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 1.3em;
+    color: #C40;
+    cursor: pointer;
+}
+
+/* --- Key Frames --- */
+
+@keyframes expand-frame {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
