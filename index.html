@@ -13,6 +13,7 @@
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/a39dd60c9e.js" crossorigin="anonymous"></script>
 
+        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <title id="page__title">Home | SyberList - Blog</title>
@@ -20,9 +21,10 @@
     <body>
         <!-- Background da Página -->
         <section id="box--background">
+            
             <!-- Butão de Ajuda -->
             <button type="button" id="box__help">
-                <i class="fa-solid fa-circle-info"></i> - Ajuda
+                <i class="fa-solid fa-circle-info"></i>
             </button>
 
             <!-- Tela -->
@@ -33,43 +35,52 @@
                     </h1>
                 </header>
                 <main id="box__main">
-                    <p id="box__description">
-                        <span>
-                            > Botão1
-                            Utilizando javascript, ao clicar deverá exibir a mensagem: "Olá mundo"
-                        </span>
-                        <span>
-                            > Botão2
-                            Utilizando jQuery, ao clicar deverá ocultar\exibir o Botão1
-                        </span>
-                    </p>
+                    <section class="box__explication" id="box__left">
+                        <header class="explication__header">
+                            <h2>Botão 1</h2>
+                        </header>
+                        <div class="explication__description">
+                            <span>
+                                Utilizando javascript, ao clicar deverá exibir a mensagem: "Olá mundo".
+                            </span>
+                        </div>
+                    </section>
+                    <section class="box__explication" id="box__right">
+                        <header class="explication__header">
+                            <h2>Botão 2</h2>
+                        </header>
+                        <div class="explication__description">
+                            <span>
+                                Utilizando jQuery, ao clicar deverá ocultar\exibir o Botão1.
+                            </span>
+                        </div>
+                    </section>
                 </main>
                 <footer id="box__footer">
                     <button type="button" class="box__button" id="box__button--1">Button 1</button>
                     <button type="button" class="box__button" id="box__button--2">Button 2</button>
                 </footer>
             </div>
+
         </section>
 
         <!-- Background do Frame -->
         <section id="frame--background">
+            <!-- Quadro de Aviso -->
             <div id="frame">
-
+                <!-- ícone para fechar -->
                 <i class="fa-solid fa-xmark"></i>
 
                 <header id="frame__header">
-                    <h1 id="frame__title">
-                        Message
-                    </h1>
+                    <h1 id="frame__title"></h1>
                 </header>
                 <main id="frame__main">
-                    <p id="frame__description">
-                        
-                    </p>
+                    <p id="frame__description"></p>
                 </main>
             </div>
         </section>
 
+        <!-- Scripts JS -->
         <script src="./JS/events.js"></script>
     </body>
 </html>

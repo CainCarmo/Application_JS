@@ -1,5 +1,4 @@
 const objDom = { 
-
     // Background
     backgroundFrame: document.querySelector("#frame--background"),
 
@@ -10,6 +9,9 @@ const objDom = {
     // Frame
     frame: document.querySelector("#frame"),
 
+    //Title
+    hFrame: document.querySelector("#frame__title"),
+
     // Paragraph
     pFrame: document.querySelector("#frame__description"),
 
@@ -17,13 +19,14 @@ const objDom = {
     iconTimes: document.querySelector(".fa-xmark")
 }
 
-// -> Click
+// -> JS
 
 objDom.btnShowMessage.addEventListener('click', () => {
     objDom.backgroundFrame.classList.add('visible')
     objDom.frame.classList.add('expand')
 
-    objDom.pFrame.innerHTML = "HELLO WORLD"
+    objDom.hFrame.innerHTML = "Message"
+    objDom.pFrame.innerHTML = "HELLO WORLD!"
 })
 
 objDom.iconTimes.addEventListener('click', () => {
@@ -31,6 +34,14 @@ objDom.iconTimes.addEventListener('click', () => {
     objDom.frame.classList.remove('expand')
 })
 
+// -> Jquery
+
 $(objDom.btnHideOrVisible).click(() => {
-    $(objDom.btnShowMessage).hide()
+    objDom.btnShowMessage.classList.toggle('hidden')
+    
+
+    if (objDom.btnShowMessage.classList[1] !== "hidden")
+        $(objDom.btnShowMessage).show()
+    else
+        $(objDom.btnShowMessage).hide()
 })

@@ -7,7 +7,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 /* --- Frame --- */
@@ -25,12 +25,18 @@
     background-color: #FFF;
 }
 
-#frame--background.visible {
+/* --- Frame Main --- */
+
+#frame__main {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#frame.expand {
-    animation: expand-frame .3s;
+#frame__description {
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 700;
 }
 
 /* --- Icons --- */
@@ -39,9 +45,24 @@
     position: absolute;
     top: 10px;
     right: 30px;
+    transition: .3s all;
     font-size: 1.3em;
-    color: #C40;
+    color: #000;
     cursor: pointer;
+}
+
+.fa-xmark:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Events JS --- */
+
+#frame--background.visible {
+    display: flex;
+}
+
+#frame.expand {
+    animation: expand-frame .3s;
 }
 
 /* --- Key Frames --- */
