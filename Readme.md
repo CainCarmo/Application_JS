@@ -1,4 +1,4 @@
-# Product_List - Desafio IBID
+# Application_JS - Desafio IBID 🟢
 
 > Aplicação de treino para Manipulação do DOM com JS
 
@@ -20,3 +20,6 @@
 
 > ### Tela de Mensagem
 <img  src="https://cdn.discordapp.com/attachments/1007771195418091571/1007771582665592943/unknown.png" />
+
+---
+<cite>- by <em>Cainã_Carmo</em></cite>
