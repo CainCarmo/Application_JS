@@ -65,6 +65,12 @@
     animation: expand-frame .3s;
 }
 
+#frame__description.help {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* --- Key Frames --- */
 
 @keyframes expand-frame {

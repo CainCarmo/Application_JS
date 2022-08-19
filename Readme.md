@@ -20,3 +20,7 @@
 
 > ### Tela de Mensagem
 <img  src="https://cdn.discordapp.com/attachments/1007771195418091571/1007771582665592943/unknown.png" />
+<br />
+
+> ### Tela de Ajuda
+<img  src="https://cdn.discordapp.com/attachments/1007771195418091571/1010038563699687546/unknown.png" />
